@@ -98,6 +98,15 @@ This is a placeholder for a preliminary version
 This is a placeholder for a preliminary version
 
 
+## Credits
+
+This is a placeholder for a preliminary version
+
+
+## License
+
+This is a placeholder for a preliminary version
+
 
 
   
