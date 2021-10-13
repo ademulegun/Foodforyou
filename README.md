@@ -75,5 +75,29 @@ Single Responsibility principle
 
 CQRS
 
+## Tech / Framework used
+
+Golang
+MySql
+SQL
+
+## Features
+
+Add Ingredients of a meal
+
+Fetch the ingredients
+
+Fet all ingredients
+
+## Tests
+
+This is a placeholder for a preliminary version
+
+## Code Example
+
+This is a placeholder for a preliminary version
+
+
+
 
   
