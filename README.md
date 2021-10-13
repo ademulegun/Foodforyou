@@ -15,7 +15,6 @@ Install foodforme with the following go command
 
 ```bash
   go run github.com/pluralsight/foodforme
-  cd foodforme
 ```
     
 ## Contributing
