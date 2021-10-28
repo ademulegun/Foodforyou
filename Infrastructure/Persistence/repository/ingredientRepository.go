@@ -32,6 +32,11 @@ func (r *IngredientRepository) SaveIngredient(ingredient Entities.Ingredient) (i
 	return int(inserId), nil
 }
 
+func (r *IngredientRepository) Delete(id string) (int, error) {
+	
+	return int(0), nil
+}
+
 func (r *IngredientRepository) GetIngredients() ([]dto.GetIngredientDto, error) {
 	results, err := Persistence.DbConn.Query("Select id, Name, dateAdded, Category from foodforyou.Ingredients")
 	if err != nil {
