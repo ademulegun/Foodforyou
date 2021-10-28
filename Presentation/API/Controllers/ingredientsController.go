@@ -5,10 +5,12 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+
 	// "strconv"
 	"strings"
 
 	addingredient "github.com/pluralsight/foodforme/Core/ApplicationServices/useCases/ingredient/Command/addIngredient"
+	deleteingredient "github.com/pluralsight/foodforme/Core/ApplicationServices/useCases/ingredient/Command/deleteIngredient"
 	"github.com/pluralsight/foodforme/Core/ApplicationServices/useCases/ingredient/Queries/getAllIngredients"
 	"github.com/pluralsight/foodforme/Core/ApplicationServices/useCases/ingredient/Queries/getIngredient"
 )
@@ -71,3 +73,7 @@ func GetIngredientHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	w.Write(j)
 }	
+
+func DeleteIngredientHandler(w http.ResponseWriter, r *http.Request) {
+	var ingredientInstance deleteingredient.DeleteIngredient
+}

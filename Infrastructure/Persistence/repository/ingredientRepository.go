@@ -32,9 +32,12 @@ func (r *IngredientRepository) SaveIngredient(ingredient Entities.Ingredient) (i
 	return int(inserId), nil
 }
 
-func (r *IngredientRepository) Delete(id string) (int, error) {
-	
-	return int(0), nil
+func (r *IngredientRepository) Delete(id string) error {
+	_, err := Persistence.DbConn.Exec(`Delete from foodforyou.Ingredients where id = ? and name = ?`, id)
+	if err != nil {
+		return errors.New(err.Error())
+	}
+	return nil
 }
 
 func (r *IngredientRepository) GetIngredients() ([]dto.GetIngredientDto, error) {
